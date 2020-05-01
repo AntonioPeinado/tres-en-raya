@@ -1,13 +1,95 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font: 14px "Century Ghotic",Futura, sans-serif;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+   
+}
+.square {
+  background: #fff;
+  border: 2px solid rgb(20, 240, 221);
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 114px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 114px;
+  cursor: grab;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   border-radius: 8px;
+}
+.square:focus {
+  outline: none;
+  color: red;
+  font-size: 4rem;
+   
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+   
+}
+ol, ul {
+  padding-left: 30px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   border-radius: 8px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   border-radius: 8px;
+}
+.game-info {
+  margin-left: 20px;
+  color: rgb(28, 49, 236);
+  font-size: 1.5rem;
+  font-family: fantasy ;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+   border-radius: 8px;
+}
+
+li {
+    color:red;
+    font-size: large;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+     border-radius: 8px;
+}
+.move {
+    color: red;
+    font-size: large;
+    font-family: fantasy;
+    transition: background-color .5s;
+    border-radius: 8px;
+    margin: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.58);
+}
+
+.move:hover{
+   background-color: aqua; 
+  font-size: 1.13rem; 
+   
 }
